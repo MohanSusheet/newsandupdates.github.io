@@ -1,0 +1,17 @@
+[
+    {
+        "title": "News Article 1",
+        "description": "SHIV RAJ This is the description of News Article 1.",
+        "image": "News company logo.jpg",
+        "author": "John Doe",
+        "date": "2023-06-01"
+      },
+      {
+        "title": "News Article 2",
+        "description": "This is the description of News Article 2.",
+        "image": "News company logo.jpg",
+        "author": "Jane Smith",
+        "date": "2023-06-02"
+      }
+]
+

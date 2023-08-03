@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Updates</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header>
+        <img src="News company logo.jpg" alt="Company Logo">
+        <section id="search-section">
+            <input type="text" id="search-input" placeholder="Enter a keyword">
+            <button onclick="search()" id="search-button">Search</button>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <!-- <li><a href="#news-section" id="everything" onclick="every()">Everything</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <a href="form.html" target="_blank">Sign-In / Sign-Up</a>
+    <main>
+        <div id="home-section">
+        </div>
+
+        <div id="news-section">
+            <div id="news-container">
+
+            </div>
+        </div>
+    </main>
+    <section id="subscription-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscription-form">
+            <label for="email-input">Email:</label>
+            <input id="email-input" name="email" placeholder="Enter your email address" required>
+            <span id="error-message" class="hidden">Please enter a valid email address.</span>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    
+    
+    <script src="news.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDyze-fymgyuXqRerabtej4b9p6uWtYtAU",
+          authDomain: "news-and-updates-28d9b.firebaseapp.com",
+          projectId: "news-and-updates-28d9b",
+          storageBucket: "news-and-updates-28d9b.appspot.com",
+          messagingSenderId: "290489401689",
+          appId: "1:290489401689:web:9b20078a29aeac9e7a0c48",
+          measurementId: "G-QNM3H839C4"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
